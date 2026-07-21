@@ -1,0 +1,694 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Prime Residence Imóveis — O imóvel certo muda uma vida. Compra, venda, locação e consultoria imobiliária em Belo Horizonte.">
+  <title>Prime Residence Imóveis | O imóvel certo muda uma vida</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&family=Manrope:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+  <link rel="stylesheet" href="https://unpkg.com/aos@2.3.4/dist/aos.css">
+
+  <link rel="stylesheet" href="css/variables.css">
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/header.css">
+  <link rel="stylesheet" href="css/components.css">
+  <link rel="stylesheet" href="css/sections.css">
+  <link rel="stylesheet" href="css/animations.css">
+  <link rel="stylesheet" href="css/responsive.css">
+</head>
+<body>
+  <div class="page-loader" id="pageLoader">
+    <div class="loader-inner">
+      <div class="loader-mark">
+        <span class="loader-pr">PR</span>
+        <span class="loader-line"></span>
+      </div>
+      <p class="loader-text">Prime Residence</p>
+    </div>
+  </div>
+
+  <div class="custom-cursor" id="customCursor" aria-hidden="true"></div>
+  <div class="custom-cursor-dot" id="customCursorDot" aria-hidden="true"></div>
+
+  <header class="site-header" id="siteHeader">
+    <div class="header-inner">
+      <a href="#home" class="logo" aria-label="Prime Residence Imóveis">
+        <span class="logo-mark">PR</span>
+        <span class="logo-text">
+          <strong>Prime Residence</strong>
+          <small>Imóveis</small>
+        </span>
+      </a>
+
+      <nav class="nav-desktop" aria-label="Menu principal">
+        <ul>
+          <li><a href="#home" class="nav-link active">Home</a></li>
+          <li><a href="#imoveis" class="nav-link" data-filter-jump="comprar">Comprar</a></li>
+          <li><a href="#imoveis" class="nav-link" data-filter-jump="alugar">Alugar</a></li>
+          <li><a href="#lancamentos" class="nav-link">Lançamentos</a></li>
+          <li><a href="#sobre" class="nav-link">Sobre</a></li>
+          <li><a href="#contato" class="nav-link">Contato</a></li>
+        </ul>
+      </nav>
+
+      <div class="header-actions">
+        <a href="#contato" class="btn btn-primary btn-sm header-cta">
+          <span>Agendar Visita</span>
+          <i class="fa-solid fa-arrow-right"></i>
+        </a>
+        <button class="menu-toggle" id="menuToggle" aria-label="Abrir menu" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <div class="mobile-nav" id="mobileNav" aria-hidden="true">
+    <nav>
+      <a href="#home" class="mobile-link">Home</a>
+      <a href="#imoveis" class="mobile-link" data-filter-jump="comprar">Comprar</a>
+      <a href="#imoveis" class="mobile-link" data-filter-jump="alugar">Alugar</a>
+      <a href="#lancamentos" class="mobile-link">Lançamentos</a>
+      <a href="#sobre" class="mobile-link">Sobre</a>
+      <a href="#contato" class="mobile-link">Contato</a>
+      <a href="#contato" class="btn btn-primary mobile-cta">Agendar Visita</a>
+    </nav>
+  </div>
+
+  <main>
+    <!-- HERO -->
+    <section class="hero" id="home">
+      <div class="hero-bg">
+        <img src="https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?auto=format&fit=crop&w=2400&q=80" alt="Residência contemporânea com fachada em madeira e pedra" class="hero-image" id="heroImage">
+        <div class="hero-overlay"></div>
+        <div class="hero-grain"></div>
+      </div>
+
+      <div class="hero-content">
+        <p class="hero-brand" data-aos="fade-up" data-aos-delay="100">Prime Residence Imóveis</p>
+        <h1 class="hero-title" data-aos="fade-up" data-aos-delay="200">
+          Encontre o imóvel perfeito<br>
+          <em>para viver seus melhores momentos.</em>
+        </h1>
+        <p class="hero-lead" data-aos="fade-up" data-aos-delay="350">
+          Mais de 15 anos conectando pessoas aos imóveis ideais com segurança, transparência e atendimento personalizado.
+        </p>
+        <div class="hero-actions" data-aos="fade-up" data-aos-delay="450">
+          <a href="#imoveis" class="btn btn-primary btn-lg">
+            <span>Ver Imóveis</span>
+            <i class="fa-solid fa-house"></i>
+          </a>
+          <a href="#contato" class="btn btn-ghost btn-lg">
+            <span>Falar com Especialista</span>
+            <i class="fa-solid fa-comments"></i>
+          </a>
+        </div>
+      </div>
+
+      <div class="hero-stats" data-aos="fade-up" data-aos-delay="600">
+        <div class="hero-stat">
+          <strong>+2.800</strong>
+          <span>imóveis</span>
+        </div>
+        <div class="hero-stat-divider"></div>
+        <div class="hero-stat">
+          <strong>+5.000</strong>
+          <span>clientes</span>
+        </div>
+        <div class="hero-stat-divider"></div>
+        <div class="hero-stat">
+          <strong>15</strong>
+          <span>anos</span>
+        </div>
+        <div class="hero-stat-divider"></div>
+        <div class="hero-stat">
+          <strong>98%</strong>
+          <span>satisfação</span>
+        </div>
+      </div>
+
+      <a href="#busca" class="scroll-indicator" aria-label="Rolar para baixo">
+        <span>Explorar</span>
+        <div class="scroll-mouse">
+          <div class="scroll-wheel"></div>
+        </div>
+      </a>
+    </section>
+
+    <!-- BUSCA -->
+    <section class="search-section" id="busca">
+      <div class="container">
+        <div class="search-panel" data-aos="fade-up">
+          <div class="search-heading">
+            <span class="eyebrow">Busca inteligente</span>
+            <h2>Encontre exatamente o que você procura</h2>
+          </div>
+
+          <div class="search-tabs" role="tablist">
+            <button class="search-tab active" data-purpose="comprar" role="tab" aria-selected="true">Comprar</button>
+            <button class="search-tab" data-purpose="alugar" role="tab" aria-selected="false">Alugar</button>
+          </div>
+
+          <form class="search-form" id="searchForm">
+            <div class="search-field">
+              <label for="filterCity">Cidade</label>
+              <div class="field-wrap">
+                <i class="fa-solid fa-location-dot"></i>
+                <select id="filterCity" name="city">
+                  <option value="">Todas as cidades</option>
+                  <option value="Belo Horizonte">Belo Horizonte</option>
+                  <option value="Nova Lima">Nova Lima</option>
+                  <option value="Contagem">Contagem</option>
+                  <option value="Betim">Betim</option>
+                </select>
+              </div>
+            </div>
+
+            <div class="search-field">
+              <label for="filterType">Tipo</label>
+              <div class="field-wrap">
+                <i class="fa-solid fa-building"></i>
+                <select id="filterType" name="type">
+                  <option value="">Todos os tipos</option>
+                  <option value="Apartamento">Apartamento</option>
+                  <option value="Casa">Casa</option>
+                  <option value="Cobertura">Cobertura</option>
+                  <option value="Sobrado">Sobrado</option>
+                  <option value="Condomínio">Condomínio</option>
+                </select>
+              </div>
+            </div>
+
+            <div class="search-field">
+              <label for="filterPrice">Preço</label>
+              <div class="field-wrap">
+                <i class="fa-solid fa-tag"></i>
+                <select id="filterPrice" name="price">
+                  <option value="">Qualquer valor</option>
+                  <option value="0-500000">Até R$ 500 mil</option>
+                  <option value="500000-1000000">R$ 500 mil – 1 mi</option>
+                  <option value="1000000-2000000">R$ 1 mi – 2 mi</option>
+                  <option value="2000000-99999999">Acima de R$ 2 mi</option>
+                </select>
+              </div>
+            </div>
+
+            <div class="search-field">
+              <label for="filterRooms">Quartos</label>
+              <div class="field-wrap">
+                <i class="fa-solid fa-bed"></i>
+                <select id="filterRooms" name="rooms">
+                  <option value="">Qualquer</option>
+                  <option value="1">1+</option>
+                  <option value="2">2+</option>
+                  <option value="3">3+</option>
+                  <option value="4">4+</option>
+                </select>
+              </div>
+            </div>
+
+            <button type="submit" class="btn btn-primary search-submit">
+              <i class="fa-solid fa-magnifying-glass"></i>
+              <span>Buscar</span>
+            </button>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <!-- DIFERENCIAIS -->
+    <section class="differentials" id="diferenciais">
+      <div class="container">
+        <div class="section-intro split-intro">
+          <div data-aos="fade-right">
+            <span class="eyebrow">Por que a Prime</span>
+            <h2>O cuidado que transforma a busca em certeza</h2>
+          </div>
+          <p data-aos="fade-left" data-aos-delay="150">
+            Cada decisão imobiliária carrega história. Por isso unimos experiência de mercado, olhar humano e processos seguros — do primeiro contato às chaves na mão.
+          </p>
+        </div>
+
+        <div class="diff-grid">
+          <article class="diff-card" data-aos="fade-up" data-mouse-light>
+            <div class="diff-icon"><i class="fa-solid fa-handshake"></i></div>
+            <h3>Atendimento personalizado</h3>
+            <p>Consultores dedicados que escutam seu momento de vida antes de indicar qualquer imóvel.</p>
+          </article>
+          <article class="diff-card" data-aos="fade-up" data-aos-delay="80" data-mouse-light>
+            <div class="diff-icon"><i class="fa-solid fa-compass-drafting"></i></div>
+            <h3>Consultoria completa</h3>
+            <p>Análise de região, valorização e potencial de retorno para quem compra ou investe.</p>
+          </article>
+          <article class="diff-card" data-aos="fade-up" data-aos-delay="160" data-mouse-light>
+            <div class="diff-icon"><i class="fa-solid fa-file-signature"></i></div>
+            <h3>Documentação segura</h3>
+            <p>Equipe jurídica acompanhando cada etapa para você assinar com tranquilidade.</p>
+          </article>
+          <article class="diff-card" data-aos="fade-up" data-aos-delay="240" data-mouse-light>
+            <div class="diff-icon"><i class="fa-solid fa-chart-line"></i></div>
+            <h3>Avaliação gratuita</h3>
+            <p>Estimativa realista do seu imóvel com base em dados locais e tendência de mercado.</p>
+          </article>
+          <article class="diff-card" data-aos="fade-up" data-aos-delay="320" data-mouse-light>
+            <div class="diff-icon"><i class="fa-solid fa-map-location-dot"></i></div>
+            <h3>Especialistas locais</h3>
+            <p>Quem conhece BH e região por dentro indica o endereço certo, não só o anúncio bonito.</p>
+          </article>
+          <article class="diff-card" data-aos="fade-up" data-aos-delay="400" data-mouse-light>
+            <div class="diff-icon"><i class="fa-solid fa-building-columns"></i></div>
+            <h3>Financiamento facilitado</h3>
+            <p>Parcerias bancárias e simulações claras para caber no seu planejamento.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- IMÓVEIS -->
+    <section class="properties" id="imoveis">
+      <div class="container">
+        <div class="section-intro center-intro" data-aos="fade-up">
+          <span class="eyebrow">Seleção curada</span>
+          <h2>Imóveis que merecem uma visita</h2>
+          <p>Uma curadoria pensada para famílias, investidores e quem busca o primeiro lar — com opções do compacto ao alto padrão.</p>
+        </div>
+
+        <div class="prop-filters" data-aos="fade-up" data-aos-delay="100">
+          <button class="chip active" data-chip="all">Todos</button>
+          <button class="chip" data-chip="Apartamento">Apartamentos</button>
+          <button class="chip" data-chip="Casa">Casas</button>
+          <button class="chip" data-chip="Cobertura">Coberturas</button>
+          <button class="chip" data-chip="Lançamento">Lançamentos</button>
+          <button class="chip" data-chip="Alto padrão">Alto padrão</button>
+        </div>
+
+        <div class="properties-grid" id="propertiesGrid">
+          <!-- Preenchido via JS -->
+        </div>
+
+        <div class="properties-empty" id="propertiesEmpty" hidden>
+          <i class="fa-regular fa-folder-open"></i>
+          <p>Nenhum imóvel encontrado com esses filtros. Tente ajustar a busca.</p>
+          <button class="btn btn-outline" id="clearFilters">Limpar filtros</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- LANÇAMENTOS -->
+    <section class="launches" id="lancamentos">
+      <div class="launches-bg"></div>
+      <div class="container">
+        <div class="launches-header" data-aos="fade-up">
+          <div>
+            <span class="eyebrow light">Novidades do mercado</span>
+            <h2>Lançamentos com exclusividade</h2>
+          </div>
+          <a href="#contato" class="btn btn-gold">Quero ser avisado</a>
+        </div>
+
+        <div class="swiper launches-swiper" data-aos="fade-up" data-aos-delay="150">
+          <div class="swiper-wrapper" id="launchesTrack">
+            <!-- Preenchido via JS -->
+          </div>
+          <div class="swiper-pagination launches-pagination"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SOBRE -->
+    <section class="about" id="sobre">
+      <div class="container about-layout">
+        <div class="about-visual" data-aos="fade-right">
+          <div class="about-image-frame">
+            <img src="https://images.unsplash.com/photo-1560518883-ce09059eeffa?auto=format&fit=crop&w=1200&q=80" alt="Consultora da Prime Residence em atendimento">
+          </div>
+          <div class="about-float-card">
+            <span class="about-float-label">Desde</span>
+            <strong>2010</strong>
+            <p>acompanhando histórias reais de mudança</p>
+          </div>
+          <div class="about-accent-bar"></div>
+        </div>
+
+        <div class="about-copy" data-aos="fade-left" data-aos-delay="120">
+          <span class="eyebrow">Nossa história</span>
+          <h2>Mais do que vender imóveis — acompanhar decisões que mudam vidas</h2>
+          <p>
+            A Prime Residence nasceu em Belo Horizonte com uma convicção simples: o imóvel certo não aparece por acaso. Ele aparece quando alguém realmente escuta o que você precisa — e o que você ainda não sabe pedir.
+          </p>
+          <p>
+            Há mais de 15 anos, unimos compra, venda, locação e consultoria para clientes de alto padrão e também para quem dá o primeiro passo. Transparência no processo, proximidade no atendimento e segurança em cada documento são o nosso jeito de trabalhar.
+          </p>
+          <blockquote class="about-quote">
+            <p>“O imóvel certo muda uma vida.”</p>
+            <cite>— Essência da marca</cite>
+          </blockquote>
+
+          <div class="about-counters">
+            <div class="about-counter">
+              <strong data-count="2800" data-suffix="+">0</strong>
+              <span>Imóveis negociados</span>
+            </div>
+            <div class="about-counter">
+              <strong data-count="5000" data-suffix="+">0</strong>
+              <span>Famílias atendidas</span>
+            </div>
+            <div class="about-counter">
+              <strong data-count="15" data-suffix="">0</strong>
+              <span>Anos de mercado</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PROCESSO -->
+    <section class="process" id="processo">
+      <div class="container">
+        <div class="section-intro center-intro" data-aos="fade-up">
+          <span class="eyebrow">Como funciona</span>
+          <h2>Do primeiro “olá” às chaves na mão</h2>
+          <p>Um caminho claro, sem surpresas — você sempre sabe o próximo passo.</p>
+        </div>
+
+        <div class="process-timeline" data-aos="fade-up" data-aos-delay="100">
+          <article class="process-step" data-step="01">
+            <div class="process-node"><i class="fa-solid fa-headset"></i></div>
+            <h3>Atendimento</h3>
+            <p>Entendemos seu perfil, orçamento e o estilo de vida que você busca.</p>
+          </article>
+          <div class="process-connector" aria-hidden="true"></div>
+          <article class="process-step" data-step="02">
+            <div class="process-node"><i class="fa-solid fa-house-chimney"></i></div>
+            <h3>Escolha</h3>
+            <p>Selecionamos opções alinhadas — sem inundar você de anúncios irrelevantes.</p>
+          </article>
+          <div class="process-connector" aria-hidden="true"></div>
+          <article class="process-step" data-step="03">
+            <div class="process-node"><i class="fa-solid fa-key"></i></div>
+            <h3>Visita</h3>
+            <p>Agendamos visitas com acompanhamento presencial e leitura honesta do imóvel.</p>
+          </article>
+          <div class="process-connector" aria-hidden="true"></div>
+          <article class="process-step" data-step="04">
+            <div class="process-node"><i class="fa-solid fa-folder-open"></i></div>
+            <h3>Documentação</h3>
+            <p>Cuidamos da análise jurídica e do caminho até a assinatura do contrato.</p>
+          </article>
+          <div class="process-connector" aria-hidden="true"></div>
+          <article class="process-step" data-step="05">
+            <div class="process-node"><i class="fa-solid fa-champagne-glasses"></i></div>
+            <h3>Chaves</h3>
+            <p>Entrega celebrada — e suporte pós-negócio sempre que precisar.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ESTATÍSTICAS -->
+    <section class="stats-band" id="estatisticas">
+      <div class="container stats-grid">
+        <div class="stat-block" data-aos="zoom-in">
+          <strong data-count="2800" data-suffix="+">0</strong>
+          <span>Imóveis vendidos</span>
+        </div>
+        <div class="stat-block" data-aos="zoom-in" data-aos-delay="80">
+          <strong data-count="5000" data-suffix="+">0</strong>
+          <span>Clientes</span>
+        </div>
+        <div class="stat-block" data-aos="zoom-in" data-aos-delay="160">
+          <strong data-count="15" data-suffix="">0</strong>
+          <span>Anos de experiência</span>
+        </div>
+        <div class="stat-block" data-aos="zoom-in" data-aos-delay="240">
+          <strong data-count="98" data-suffix="%">0</strong>
+          <span>Satisfação</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- DEPOIMENTOS -->
+    <section class="testimonials" id="depoimentos">
+      <div class="container">
+        <div class="section-intro asymmetric" data-aos="fade-up">
+          <div>
+            <span class="eyebrow">Quem confiou</span>
+            <h2>Histórias reais de quem encontrou o endereço certo</h2>
+          </div>
+        </div>
+
+        <div class="swiper testimonials-swiper" data-aos="fade-up" data-aos-delay="120">
+          <div class="swiper-wrapper" id="testimonialsTrack"></div>
+          <div class="testimonials-nav">
+            <button class="nav-btn testimonials-prev" aria-label="Anterior"><i class="fa-solid fa-arrow-left"></i></button>
+            <button class="nav-btn testimonials-next" aria-label="Próximo"><i class="fa-solid fa-arrow-right"></i></button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- BLOG -->
+    <section class="blog" id="blog">
+      <div class="container">
+        <div class="section-intro split-intro">
+          <div data-aos="fade-right">
+            <span class="eyebrow">Conteúdo útil</span>
+            <h2>Guias para decidir com mais clareza</h2>
+          </div>
+          <a href="#contato" class="text-link" data-aos="fade-left">Ver todos os artigos <i class="fa-solid fa-arrow-right"></i></a>
+        </div>
+
+        <div class="blog-grid" id="blogGrid">
+          <!-- Preenchido via JS -->
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQ -->
+    <section class="faq" id="faq">
+      <div class="container faq-layout">
+        <div class="faq-intro" data-aos="fade-right">
+          <span class="eyebrow">Dúvidas frequentes</span>
+          <h2>Respostas diretas para o que mais perguntam</h2>
+          <p>Se a sua dúvida não estiver aqui, fale com a gente — respondemos com calma e sem enrolação.</p>
+          <a href="#contato" class="btn btn-outline">Falar com um consultor</a>
+        </div>
+
+        <div class="faq-list" id="faqList" data-aos="fade-left" data-aos-delay="100">
+          <!-- Preenchido via JS -->
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="cta-section" id="cta">
+      <div class="cta-media">
+        <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=2000&q=80" alt="Sala de estar luminosa com vista para o jardim">
+        <div class="cta-blur"></div>
+      </div>
+      <div class="container">
+        <div class="cta-glass" data-aos="zoom-in">
+          <span class="eyebrow light">Próximo passo</span>
+          <h2>Pronto para encontrar o imóvel que combina com a sua história?</h2>
+          <p>Agende uma conversa com nossos especialistas. Sem pressão — só orientação clara e opções que fazem sentido.</p>
+          <div class="cta-actions">
+            <a href="#contato" class="btn btn-primary btn-lg">Agendar visita gratuita</a>
+            <a href="https://wa.me/5531999992020" class="btn btn-ghost btn-lg" target="_blank" rel="noopener">
+              <i class="fa-brands fa-whatsapp"></i> WhatsApp
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTATO -->
+    <section class="contact" id="contato">
+      <div class="container contact-layout">
+        <div class="contact-info" data-aos="fade-right">
+          <span class="eyebrow">Contato</span>
+          <h2>Vamos conversar sobre o seu próximo endereço</h2>
+          <p>Atendimento presencial e online. Conte o que você busca — a gente organiza o caminho.</p>
+
+          <ul class="contact-details">
+            <li>
+              <i class="fa-solid fa-location-dot"></i>
+              <div>
+                <strong>Endereço</strong>
+                <span>Av. Brasil, 1540 — Centro<br>Belo Horizonte — MG</span>
+              </div>
+            </li>
+            <li>
+              <i class="fa-solid fa-phone"></i>
+              <div>
+                <strong>Telefone</strong>
+                <a href="tel:+553133332020">(31) 3333-2020</a>
+              </div>
+            </li>
+            <li>
+              <i class="fa-brands fa-whatsapp"></i>
+              <div>
+                <strong>WhatsApp</strong>
+                <a href="https://wa.me/5531999992020" target="_blank" rel="noopener">(31) 99999-2020</a>
+              </div>
+            </li>
+            <li>
+              <i class="fa-solid fa-envelope"></i>
+              <div>
+                <strong>E-mail</strong>
+                <a href="mailto:contato@primeresidence.com">contato@primeresidence.com</a>
+              </div>
+            </li>
+            <li>
+              <i class="fa-regular fa-clock"></i>
+              <div>
+                <strong>Horário</strong>
+                <span>Seg–Sex: 9h às 18h<br>Sáb: 9h às 13h</span>
+              </div>
+            </li>
+          </ul>
+        </div>
+
+        <form class="contact-form" id="contactForm" data-aos="fade-left" data-aos-delay="120">
+          <div class="form-row">
+            <div class="form-group">
+              <label for="name">Nome</label>
+              <input type="text" id="name" name="name" placeholder="Seu nome completo" required>
+            </div>
+            <div class="form-group">
+              <label for="phone">Telefone</label>
+              <input type="tel" id="phone" name="phone" placeholder="(31) 99999-0000" required>
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="email">E-mail</label>
+            <input type="email" id="email" name="email" placeholder="voce@email.com" required>
+          </div>
+          <div class="form-group">
+            <label for="interest">Interesse</label>
+            <select id="interest" name="interest" required>
+              <option value="">Selecione</option>
+              <option value="comprar">Comprar</option>
+              <option value="alugar">Alugar</option>
+              <option value="vender">Vender / Avaliar</option>
+              <option value="investir">Investir</option>
+              <option value="visita">Agendar visita</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="message">Mensagem</label>
+            <textarea id="message" name="message" rows="4" placeholder="Conte um pouco sobre o que você procura..." required></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary btn-lg btn-block">
+            <span>Enviar mensagem</span>
+            <i class="fa-solid fa-paper-plane"></i>
+          </button>
+          <p class="form-note">Ao enviar, nossa equipe retorna em até 1 dia útil.</p>
+        </form>
+      </div>
+
+      <div class="contact-map" data-aos="fade-up">
+        <iframe
+          title="Mapa Prime Residence — Av. Brasil, Belo Horizonte"
+          src="https://maps.google.com/maps?q=Av.%20Brasil%201540%20Belo%20Horizonte&t=&z=15&ie=UTF8&iwloc=&output=embed"
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+          allowfullscreen>
+        </iframe>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-top">
+      <div class="footer-brand">
+        <a href="#home" class="logo logo-footer">
+          <span class="logo-mark">PR</span>
+          <span class="logo-text">
+            <strong>Prime Residence</strong>
+            <small>Imóveis</small>
+          </span>
+        </a>
+        <p>O imóvel certo muda uma vida. Compra, venda, locação e consultoria com atendimento humanizado em Belo Horizonte e região.</p>
+        <div class="social-links">
+          <a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+          <a href="#" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+          <a href="#" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+          <a href="#" aria-label="YouTube"><i class="fa-brands fa-youtube"></i></a>
+        </div>
+      </div>
+
+      <div class="footer-col">
+        <h4>Empresa</h4>
+        <ul>
+          <li><a href="#sobre">Sobre nós</a></li>
+          <li><a href="#diferenciais">Diferenciais</a></li>
+          <li><a href="#processo">Como funciona</a></li>
+          <li><a href="#depoimentos">Depoimentos</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h4>Serviços</h4>
+        <ul>
+          <li><a href="#imoveis">Comprar</a></li>
+          <li><a href="#imoveis">Alugar</a></li>
+          <li><a href="#lancamentos">Lançamentos</a></li>
+          <li><a href="#contato">Avaliação gratuita</a></li>
+          <li><a href="#contato">Consultoria</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h4>Institucional</h4>
+        <ul>
+          <li><a href="#blog">Blog</a></li>
+          <li><a href="#faq">FAQ</a></li>
+          <li><a href="#contato">Contato</a></li>
+          <li><a href="#">Política de privacidade</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col footer-contact">
+        <h4>Visite-nos</h4>
+        <p>Av. Brasil, 1540<br>Centro — Belo Horizonte/MG</p>
+        <p><a href="tel:+553133332020">(31) 3333-2020</a></p>
+        <p><a href="mailto:contato@primeresidence.com">contato@primeresidence.com</a></p>
+        <p class="footer-hours">Seg–Sex 9h–18h · Sáb 9h–13h</p>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <div class="container">
+        <p>© <span id="year"></span> Prime Residence Imóveis. Todos os direitos reservados.</p>
+        <p class="footer-credit">Site institucional — projeto de portfólio</p>
+      </div>
+    </div>
+  </footer>
+
+  <a href="https://wa.me/5531999992020?text=Olá!%20Gostaria%20de%20saber%20mais%20sobre%20os%20imóveis." class="whatsapp-float" target="_blank" rel="noopener" aria-label="WhatsApp">
+    <i class="fa-brands fa-whatsapp"></i>
+  </a>
+
+  <button class="back-to-top" id="backToTop" aria-label="Voltar ao topo">
+    <i class="fa-solid fa-chevron-up"></i>
+  </button>
+
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+  <script src="js/data.js"></script>
+  <script src="js/animations.js"></script>
+  <script src="js/interactions.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>

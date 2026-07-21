@@ -1,0 +1,129 @@
+/* Premium micro-interactions & motion helpers */
+
+[data-aos] {
+  pointer-events: auto;
+}
+
+.reveal-up {
+  opacity: 0;
+  transform: translateY(28px);
+}
+
+.icon-pulse {
+  animation: iconPulse 2.8s ease-in-out infinite;
+}
+
+@keyframes iconPulse {
+  0%, 100% { transform: scale(1); }
+  50% { transform: scale(1.06); }
+}
+
+/* Ripple ink for buttons */
+.btn .ripple {
+  position: absolute;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.35);
+  transform: scale(0);
+  animation: rippleAnim 0.6s linear;
+  pointer-events: none;
+  z-index: 0;
+}
+
+@keyframes rippleAnim {
+  to {
+    transform: scale(4);
+    opacity: 0;
+  }
+}
+
+/* Soft shimmer on gold accents */
+.btn-gold {
+  background-size: 160% 160%;
+  animation: goldShimmer 6s ease infinite;
+}
+
+@keyframes goldShimmer {
+  0%, 100% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+}
+
+/* Property card enter states handled by AOS + JS stagger */
+.property-card.is-hidden {
+  display: none;
+}
+
+.property-card.is-entering {
+  animation: cardEnter 0.55s var(--ease) both;
+}
+
+@keyframes cardEnter {
+  from {
+    opacity: 0;
+    transform: translateY(24px) scale(0.98);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}
+
+.properties-grid .property-card:nth-child(3n + 2).is-entering {
+  animation-name: cardEnterOffset;
+}
+
+@keyframes cardEnterOffset {
+  from {
+    opacity: 0;
+    transform: translateY(42px) scale(0.98);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(18px) scale(1);
+  }
+}
+
+/* Underline draw for text links */
+.text-link {
+  position: relative;
+}
+
+.text-link::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -2px;
+  width: 100%;
+  height: 1px;
+  background: currentColor;
+  transform: scaleX(0);
+  transform-origin: right;
+  transition: transform 0.4s var(--ease);
+}
+
+.text-link:hover::after {
+  transform: scaleX(1);
+  transform-origin: left;
+}
+
+/* Reduced motion */
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+
+  .about-float-card,
+  .loader-line,
+  .scroll-wheel,
+  .launches-bg::after,
+  .process-connector::after {
+    animation: none !important;
+  }
+}

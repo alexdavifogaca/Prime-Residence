@@ -1,0 +1,282 @@
+@media (max-width: 1100px) {
+  .search-form {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .search-submit {
+    grid-column: 1 / -1;
+  }
+
+  .footer-top {
+    grid-template-columns: 1.2fr 1fr 1fr;
+  }
+
+  .footer-brand {
+    grid-column: 1 / -1;
+  }
+
+  .blog-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .blog-card:first-child {
+    grid-row: auto;
+    grid-column: 1 / -1;
+  }
+
+  .blog-card:first-child .blog-thumb {
+    aspect-ratio: 21 / 9;
+  }
+}
+
+@media (max-width: 980px) {
+  .diff-grid,
+  .properties-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .diff-card:nth-child(even),
+  .properties-grid .property-card:nth-child(3n + 2) {
+    margin-top: 0;
+    transform: none;
+  }
+
+  .properties-grid .property-card:nth-child(3n + 2):hover {
+    transform: translateY(-10px);
+  }
+
+  .about-layout,
+  .faq-layout,
+  .contact-layout {
+    grid-template-columns: 1fr;
+    gap: 2.5rem;
+  }
+
+  .about-float-card {
+    right: 1rem;
+    bottom: 1rem;
+  }
+
+  .about-accent-bar {
+    left: 12px;
+  }
+
+  .process-timeline {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 0;
+  }
+
+  .process-connector {
+    width: 2px;
+    height: 28px;
+    margin: 0 auto;
+    flex: none;
+    background: linear-gradient(180deg, var(--petroleum-mist), var(--gold-soft));
+  }
+
+  .process-step {
+    display: grid;
+    grid-template-columns: 68px 1fr;
+    grid-template-rows: auto auto;
+    column-gap: 1rem;
+    text-align: left;
+    padding: 0.75rem 0;
+  }
+
+  .process-step::before {
+    grid-column: 2;
+    grid-row: 1;
+    margin-bottom: 0.25rem;
+    font-size: 1.5rem;
+  }
+
+  .process-node {
+    grid-column: 1;
+    grid-row: 1 / 3;
+    margin: 0;
+    align-self: center;
+  }
+
+  .process-step h3,
+  .process-step p {
+    grid-column: 2;
+  }
+
+  .process-step p {
+    max-width: none;
+    margin: 0;
+  }
+
+  .stats-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+  }
+
+  .scroll-indicator {
+    display: none;
+  }
+
+  .hero-stats {
+    justify-content: center;
+  }
+
+  .hero-stat-divider {
+    display: none;
+  }
+}
+
+@media (max-width: 720px) {
+  :root {
+    --header-h: 72px;
+  }
+
+  .container {
+    width: min(100% - 1.5rem, var(--container));
+  }
+
+  .split-intro {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .search-panel {
+    padding: 1.4rem 1.15rem 1.5rem;
+    border-radius: 0 0 var(--radius-lg) var(--radius-lg);
+  }
+
+  .search-form {
+    grid-template-columns: 1fr;
+  }
+
+  .diff-grid,
+  .properties-grid,
+  .blog-grid,
+  .stats-grid,
+  .about-counters,
+  .form-row {
+    grid-template-columns: 1fr;
+  }
+
+  .blog-card:first-child {
+    grid-column: auto;
+  }
+
+  .blog-card:first-child .blog-thumb {
+    aspect-ratio: 16 / 10;
+  }
+
+  .launches-header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .hero {
+    align-items: center;
+    padding-top: calc(var(--header-h) + 1.5rem);
+  }
+
+  .hero-content {
+    margin: auto auto 0;
+    padding-bottom: 1.25rem;
+  }
+
+  .hero-actions {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .hero-actions .btn {
+    width: 100%;
+  }
+
+  .hero-stats {
+    margin-top: 1.5rem;
+    padding: 1rem;
+    gap: 0.75rem;
+  }
+
+  .hero-stat {
+    min-width: calc(50% - 0.75rem);
+  }
+
+  .differentials,
+  .properties,
+  .about,
+  .process,
+  .testimonials,
+  .blog,
+  .faq,
+  .cta-section,
+  .contact {
+    padding-top: 4.5rem;
+    padding-bottom: 4.5rem;
+  }
+
+  .contact {
+    padding-bottom: 0;
+  }
+
+  .cta-glass {
+    padding: 2.25rem 1.35rem;
+  }
+
+  .cta-actions {
+    flex-direction: column;
+  }
+
+  .cta-actions .btn {
+    width: 100%;
+  }
+
+  .contact-form {
+    padding: 1.35rem;
+  }
+
+  .faq-list {
+    padding: 0.25rem 1.15rem;
+  }
+
+  .footer-top {
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+  }
+
+  .footer-brand,
+  .footer-contact {
+    grid-column: 1 / -1;
+  }
+
+  .contact-map {
+    height: 260px;
+  }
+
+  .whatsapp-float {
+    right: 1rem;
+    bottom: 1rem;
+  }
+
+  .back-to-top {
+    right: 1rem;
+    bottom: 4.6rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .footer-top {
+    grid-template-columns: 1fr;
+  }
+
+  .about-float-card {
+    width: 140px;
+    padding: 1rem;
+  }
+
+  .about-float-card strong {
+    font-size: 1.9rem;
+  }
+
+  .launch-card {
+    height: 360px;
+  }
+}

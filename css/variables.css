@@ -1,0 +1,63 @@
+:root {
+  /* Brand palette — petroleum, beige, wood, discreet gold */
+  --petroleum: #0c3d4a;
+  --petroleum-deep: #082c36;
+  --petroleum-mid: #155a6b;
+  --petroleum-soft: #1a5a6b;
+  --petroleum-mist: #dce8eb;
+
+  --gold: #b8955e;
+  --gold-soft: #d4b98a;
+  --gold-muted: rgba(184, 149, 94, 0.18);
+
+  --beige: #ebe4d8;
+  --beige-warm: #f3eee6;
+  --wood: #c4a574;
+  --wood-deep: #9a7a4f;
+
+  --white: #ffffff;
+  --off-white: #f7f5f1;
+  --gray-100: #f0eeea;
+  --gray-200: #e2dfd8;
+  --gray-300: #c8c4bb;
+  --gray-500: #7a766e;
+  --gray-700: #3d3a35;
+  --gray-900: #1c1b19;
+
+  --text: var(--gray-900);
+  --text-muted: var(--gray-500);
+  --text-inverse: var(--off-white);
+
+  --bg: var(--off-white);
+  --bg-elevated: var(--white);
+  --bg-soft: var(--beige-warm);
+  --bg-dark: var(--petroleum-deep);
+
+  --border: rgba(28, 27, 25, 0.08);
+  --border-strong: rgba(28, 27, 25, 0.14);
+
+  --shadow-sm: 0 2px 8px rgba(8, 44, 54, 0.06);
+  --shadow-md: 0 12px 32px rgba(8, 44, 54, 0.1);
+  --shadow-lg: 0 24px 64px rgba(8, 44, 54, 0.14);
+  --shadow-float: 0 20px 40px rgba(8, 44, 54, 0.16);
+
+  --radius-sm: 8px;
+  --radius-md: 14px;
+  --radius-lg: 22px;
+  --radius-xl: 32px;
+  --radius-pill: 999px;
+
+  --font-display: "Cormorant Garamond", Georgia, serif;
+  --font-body: "Manrope", system-ui, sans-serif;
+
+  --header-h: 84px;
+  --container: 1180px;
+  --ease: cubic-bezier(0.22, 1, 0.36, 1);
+  --ease-out: cubic-bezier(0.16, 1, 0.3, 1);
+
+  --glass: rgba(255, 255, 255, 0.72);
+  --glass-dark: rgba(8, 44, 54, 0.55);
+  --blur: 18px;
+
+  --transition: 0.35s var(--ease);
+}
